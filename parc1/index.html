@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Change by Time</title>
+    <style>
+        #changingColor {
+            font-size: 24px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="changingColor">Color Changing Text</div>
+
+    <script>
+        function changeColorByTime() {
+            var currentTime = new Date().getHours();
+
+            // You can adjust the color scheme based on the time of day
+            var color;
+            if (currentTime >= 3 && currentTime < 6) {
+                // Morning
+                color = "orange";
+            } else if (currentTime >= 6 && currentTime < 9) {
+                // Afternoon
+                color = "green";
+            } else {
+                // Evening/Night
+                color = "blue";
+            }
+
+            // Apply the color to the element
+            document.getElementById("changingColor").style.color = color;
+        }
+
+        // Call the function initially to set the color based on the current time
+        changeColorByTime();
+
+        // Update the color every minute (adjust the interval as needed)
+        setInterval(changeColorByTime, 60000); // 60000 milliseconds = 1 minute
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px;
+    gap: 25px;
+}
+
+.icon {
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+    margin-top: -30px;
+}
+
+.pc {
+    display: flex;
+    gap: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 19px;
+}
+
+.ll {
+    margin-bottom: -30px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+.btn {
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+.hea {
+    font-size: 85px;
+    font-weight: 8px;
+}
+
+.btn1 {
+    font-size: 30px;
+    background-color: blue;
+    border-radius: 15px;
+    padding: 15px;
+    font-weight: bold;
+    color: #fff;
+
+}
+span{
+   display: flex;
+   gap: 15px;
+   flex-direction: row;
+}
